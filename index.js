@@ -29,12 +29,12 @@ export default (
 
       const load = async () => {
         if ($http) {
-          const {body} = await $http.post(
+          const {data} = await $http.post(
             url,
             data,
             { headers }
           )
-          return body
+          return data
         } else {
           const response = await fetch(
             url,
