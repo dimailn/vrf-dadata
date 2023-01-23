@@ -1,4 +1,4 @@
-const DEFAULT_ORIGIN = 'https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest'
+const DEFAULT_ORIGIN = 'https://suggestions.dadata.ru/suggestions/api/4_1/rs/'
 
 export default (
   {
