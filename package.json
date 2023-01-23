@@ -1,6 +1,6 @@
 {
   "name": "vrf-dadata",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Dadata autocomplete for vrf",
   "main": "index.js",
   "scripts": {
