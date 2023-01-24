@@ -7,7 +7,13 @@ export default (
   } = {}
 ) => ({
   name: 'dadata',
-  setup({onLoad, form: {$http}}) {
+  setup({onLoad, onMounted, onValueChanged, getValue, setQuery, form: {$http}}) {
+    const syncQuery = () => setQuery(getValue())
+
+    onMounted(syncQuery)
+
+    onValueChanged(syncQuery)
+
     onLoad(async ({query, entity, limit}) => {
       const data = {
         query,
